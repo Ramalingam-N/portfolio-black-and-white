@@ -1,520 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>N Ramalingam - Portfolio</title>
-        <link rel="icon" href="./images/nr-images-removebg-preview.png"/>
-        <link rel="stylesheet" href="./css/style.css" />
-        <link
-            rel="stylesheet"
-            href="./css/aos.css"
-        />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="./css/all.min.css"
-        />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link href="./css/font.css" rel="stylesheet">
-        <script src="./js/aos.js"></script>
-    </head>
-    <body>
-        <div class="front-page">
-            <nav class="navbar">
-                <div class="nav-brand">
-                    <a href="#front">
-                        <img
-                            class="img"
-                            src="./images/nr-images-removebg-preview.png"
-                            height="25"
-                            width="50"
-                            alt="N Ramalingam Logo"
-                        />
-                    </a>
-                </div>
-                <div class="nav-right">
-                    <a href="#about" class="nav-link">ABOUT</a>
-                    <a href="#skills" class="nav-link">SKILLS</a>
-                    <a href="#projects" class="nav-link">PROJECTS</a>
-                    <a href="#courses" class="nav-link">CERTIFICATIONS</a>
-                </div>
-                <div class="navbar-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-            <div id="front" class="front-page-body">
-                <div class="name" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
-                    <div class="greet">Hello, I am</div>
-                    <h1>N Ramalingam</h1>
-                    <h3>Innovative Problem Solver</h3>
-                    <a href="#contact-me">
-                        <button class="contact">Contact Me</button>
-                    </a>
-                </div>
-                    <img
-						data-aos="fade-left" 
-						data-aos-delay="400" 
-						data-aos-duration="1000"
-                        src="./images/frontpage-image.png"
-                        height="420"
-                        alt="Profile Image"
-                    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===== SEO ===== -->
+  <title>Ramalingam N — Backend Engineer</title>
+  <meta name="description" content="Ramalingam N — Backend Engineer building scalable, event-driven systems with Spring Boot, Microservices & Azure. Shipping production services at Accenture." />
+  <meta name="author" content="Ramalingam N" />
+  <meta name="theme-color" content="#0A0B0F" />
+
+  <!-- ===== Open Graph (link previews) ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ramalingam N — Backend Engineer" />
+  <meta property="og:description" content="Building scalable, event-driven backend systems with Spring Boot & Azure. Shipping production services at Accenture." />
+  <meta property="og:url" content="https://ramalingam-n.github.io/portfolio/" />
+  <meta property="og:image" content="https://ramalingam-n.github.io/portfolio/images/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- ===== Favicon ===== -->
+  <link rel="icon" type="image/png" href="./images/nr-images-removebg-preview.png" />
+
+  <!-- ===== Fonts ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- ===== Styles ===== -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__brand" aria-label="Home">Ramalingam<span class="accent">.</span></a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#experience" class="nav__link">Experience</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#skills" class="nav__link">Skills</a>
+        <a href="#achievements" class="nav__link">Achievements</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="./files/Ramalingam_N_Backend_Engineer.pdf" class="btn btn--sm btn--primary" target="_blank" rel="noopener">Résumé</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <p class="hero__status reveal">
+          <span class="hero__dot"></span> Open to Backend / SDE roles
+        </p>
+
+        <h1 class="hero__title reveal">
+          Backend Engineer building
+          <span class="accent-text">scalable, event-driven</span> systems.
+        </h1>
+
+        <p class="hero__pitch reveal">
+          I'm <strong>Ramalingam N</strong>, a backend engineer specializing in <strong>Java</strong> and <strong>Spring Boot</strong>. I currently ship high-throughput <strong>Azure</strong> integrations at Accenture, bringing enterprise-scale cloud experience to modern backend architecture.
+        </p>
+
+        <div class="hero__cta reveal">
+          <a href="#projects" class="btn btn--primary">
+            View my work
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="./files/Ramalingam_N_Backend_Engineer.pdf" class="btn btn--ghost" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+            Résumé
+        </a>
+        </div>
+
+        <div class="hero__socials reveal" aria-label="Social links">
+          <a href="https://github.com/Ramalingam-N" target="_blank" rel="noopener" aria-label="GitHub" class="icon-link">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.36 9.36 0 015 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.02 10.02 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/n-ramalingam" target="_blank" rel="noopener" aria-label="LinkedIn" class="icon-link">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.02-2.94-1.8-2.94-1.8 0-2.07 1.4-2.07 2.85V21H9z"/></svg>
+          </a>
+          <a href="https://leetcode.com/Ramalingam_N/" target="_blank" rel="noopener" aria-label="LeetCode" class="icon-link">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M13.5 4.5L7 11l6.5 6.5M9 11h11"/></svg>
+          </a>
+          <a href="mailto:ramalingamn4977@gmail.com" aria-label="Email" class="icon-link">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          </a>
+        </div>
+
+        <ul class="hero__stats reveal">
+          <li><b>1.8+ yrs</b><span>Production experience</span></li>
+          <li><b>25.3k+</b><span>Events/day handled</span></li>
+          <li><b>100 ms</b><span>Avg latency</span></li>
+          <li><b>720+</b><span>LeetCode solved</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EXPERIENCE
+    ============================================================ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Experience</p>
+          <h2 class="section__title">Shipping production-grade systems.</h2>
+        </header>
+
+        <div class="timeline">
+          <article class="tl-item reveal">
+            <div class="tl-item__meta">
+              <span class="tl-item__date">Nov 2024 — Present</span>
+              <span class="tl-item__loc">Chennai, India</span>
             </div>
-        </div>
-
-        <div id="about" style="padding-bottom: 4rem"></div>
-        <div id="aboutt" class="about-section">
-            <div
-                class="about"
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-duration="800"
-            >
-                <h2 class="about-h2">ABOUT ME</h2>
-                <p class="about-p">
-                    After diving into Computer Science, I’ve been fully committed to honing my skills as a software engineer.
-					My journey has been driven by a deep passion for technology—whether it’s working with frameworks like <strong style="font-weight: 900;">Spring Boot</strong> and <strong style="font-weight: 900;">Azure</strong>
-					or diving into core CS concepts like <strong style="font-weight: 900;">DSA</strong> and system design. I take a problem-solving approach to every project, always looking
-					for ways to make solutions more efficient and impactful. With a solid foundation in Computer Networks, Operating Systems, and
-					<strong style="font-weight: 900;">Cloud Computing</strong>, I’ve become an engineer who constantly seeking new challenges and
-					innovative ways to build meaningful solutions.
-                </p>
+            <div class="tl-item__body card">
+              <h3 class="tl-item__role">Software Engineering Associate</h3>
+              <p class="tl-item__company">Accenture</p>
+              <ul class="tl-item__points">
+                <li>
+                  Built an <strong>event-driven Service Bus</strong> integration on Azure Functions
+                  processing <strong>25.3k+ events/day</strong> at <strong>100 ms latency</strong> with 100% application-layer correctness.
+                </li>
+                <li>
+                  Designed an <strong>HTTP order-document service</strong> exposed via
+                  <strong>APIM with OAuth2 / Azure AD</strong>, using a <strong>Claim-Check</strong> pattern to
+                  hand off large payloads to <strong>SAP S/4HANA</strong> reliably.
+                </li>
+                <li>
+                  Migrated 8 services from .NET 6 to .NET 8 and cleared Accenture's Cloud-Native Microservices Residency in Java, Spring Boot, and Docker.
+                </li>
+              </ul>
+              <ul class="tag-row">
+                <li>Azure Functions</li><li>Service Bus</li><li>C#/.NET 8</li>
+                <li>OAuth2</li><li>Spring Boot</li><li>Microservices</li><li>Docker</li>
+              </ul>
             </div>
+          </article>
         </div>
+      </div>
+    </section>
 
-        <div id="skills" class="skills-section">
-            <h2 data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">SKILLS</h2>
-            <div class="skills-div">
-                <div
-                    class="skill-card"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                    data-aos-duration="600"
-                >
-                    <h3>Languages</h3>
-                    <ul class="skills-ul">
-                        <li>JAVA</li>
-						<li>C#</li>
-                        <li>JAVASCRIPT</li>
-                        <li>MySQL</li>
-						<li>x64 ASSEMBLY</li>
-						<li>BASH SCRIPTING</li>
-                        <li>YAML</li>
-						<li>HTML, CSS</li>
-                    </ul>
-                </div>
-                <div
-                    class="skill-card"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                    data-aos-duration="600"
-                >
-                    <h3>Technical Skills</h3>
-                    <ul class="skills-ul">
-						<li>SPRING BOOT</li>
-						<li>AZURE</li>
-                        <li>PROBLEM SOLVING</li>
-                        <li>DOCKER</li>
-						<li>GIT & GITHUB</li>
-                        <li>ANGULAR JS</li>
-						<li>DEVOPS</li>
-						<li>Node JS</li>
-                        <li>Express JS</li>
-                    </ul>
-                </div>
-                <div
-                    class="skill-card"
-                    data-aos="fade-up"
-                    data-aos-delay="500"
-                    data-aos-duration="600"
-                >
-                    <h3>CS Core</h3>
-                    <ul class="skills-ul">
-                        <li>COMPUTER NETWORKS</li>
-						<li>DSA</li>
-						<li>CLOUD COMPUTING</li>
-                        <li>OPERATING SYSTEM</li>
-                        <li>CLOUD NATIVE MICROSERVICES</li>
-                        <li>COA</li>
-						<li>SYSTEM DESIGN</li>
-                        <li>DBMS</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <!-- ============================================================
+         PROJECTS
+    ============================================================ -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Projects</p>
+          <h2 class="section__title">Things I've built &amp; shipped.</h2>
+        </header>
 
-        <div id="projects" class="projects-section">
-            <h2 data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">PROJECTS</h2>
-            <div class="projects-grid">
-                <div
-                    class="project-card project-card-1"
-                    title="Explore on GitHub"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                    data-aos-duration="700"
-                >
-                    <h3>BLOG-ZONE</h3>
-                    <p>
-                        Blog-Zone, I built Blog-Zone to explore how a modern, secure social platform
-						handles real-time data and user interactions. Using Spring Boot and Spring
-						Security, I set up a solid backend that manages everything from secure
-						logins to complex CRUD operations. I really focused on the user experience
-						by integrating AJAX, which allows users to like, comment, and follow
-						others instantly without the page reloads. For the data
-						layer, I used MySQL and JPA to ensure all posts and user relationships
-						are handled efficiently. This project was a deep dive into building
-						interactive features, specifically focusing on how to manage user
-						following and search filtering within a secure environment.
-                    </p>
-                    <div class="project-technology">
-                        <!-- <strong>Technologies:</strong> -->
-                        <ul class="project-li">
-                            <li>Spring Boot</li>
-                            <li>Hibernate</li>
-                            <li>Spring Security</li>
-                            <li>AJAX</li>
-                            <li>MySQL</li>
-                            <li>Thymeleaf</li>
-                            <li>API</li>
-                            <li>HTML CSS</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div
-                    class="project-card project-card-2"
-                    title="Explore on GitHub"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                    data-aos-duration="700"
-                >
-                    <h3>PUSHnPULL</h3>
-                    <p>
-                        PushNPull, I built PushNPull because I wanted a lightweight, custom tool to test and
-						debug APIs without relying on heavy external software. Built with Node.js
-						and Express.js, it handles everything from basic GET and POST requests
-						to more complex methods like PUT and DELETE. I made sure to include
-						support for Basic Auth and Bearer Tokens so I could test secure endpoints,
-						and I added a request history feature to make re-testing common parameters
-						much faster. It was a practical project that really deepened my
-						understanding of how HTTP headers, body data, and status codes work
-						together in modern web communication.
-                    </p>
-                    <div class="project-technology">
-                        <!-- <strong>Technologies:</strong> -->
-                        <ul class="project-li">
-                            <li>Node JS</li>
-                            <li>JavaScript</li>
-                            <li>Express JS</li>
-                            <li>DOM</li>
-                            <li>HTML CSS</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div
-                    class="project-card project-card-3"
-                    title="Explore on GitHub"
-                    data-aos="fade-up"
-                    data-aos-delay="500"
-                    data-aos-duration="700"
-                >
-                    <h3>WEATHER-SPOT</h3>
-                    <p>
-                        WeatherSpot, I built WeatherSpot to practice handling complex third-party
-						data and turning it into something easy for a user to read. Using Spring
-						Boot and Thymeleaf, I integrated the Visual Crossing API to fetch
-						everything from real-time conditions to 15-day forecasts. One of the
-						more interesting challenges was managing the historical weather data,
-						allowing users to look back as far as 1973. I focused on detail, ensuring
-						the app tracks specific metrics like UV index, cloud cover, and wind gusts.
-						It was a great project for learning how to process large JSON responses and
-						render them efficiently in a clean, server-side UI.
-                    </p>
-                    <div class="project-technology">
-                        <!-- <strong>Technologies:</strong> -->
-                        <ul class="project-li">
-                            <li>Spring Boot</li>
-                            <li>Java</li>
-                            <li>API</li>
-                            <li>Thymeleaf</li>
-                            <li>HTML CSS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div
-                    class="project-card project-card-4"
-                    title="Explore on GitHub"
-                    data-aos="fade-up"
-                    data-aos-delay="700"
-                    data-aos-duration="700"
-                >
-                    <h3>INFINITE-SCREENSHOT (Chrome Extension)</h3>
-                    <p>
-                        Infinite-Screenshot, I built this Chrome extension to make capturing entire
-                        webpages as simple as a single click. Instead of manually cropping or
-                        stitching images, I used JavaScript and the html2canvas library to
-                        programmatically convert the page's HTML and CSS into a high-resolution
-                        image. I focused on making the extension lightweight and reliable, ensuring
-                        it could accurately render the DOM structure into a downloadable file
-                        while maintaining the original layout. It was a practical way to learn
-                        about Chrome’s Extension API and the challenges of rendering web content
-                        into different formats directly within the browser.
-                    </p>
-                    <div class="project-technology">
-                        <!-- <strong>Technologies:</strong> -->
-                        <ul class="project-li">
-                            <li>JavaScript</li>
-                            <li>DOM</li>
-                            <li>HTML CSS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div
-                    class="project-card project-card-5"
-                    title="Explore on GitHub"
-                    data-aos="fade-up"
-                    data-aos-delay="700"
-                    data-aos-duration="700"
-                >
-                    <h3>SIMPLE-DEFINE (Chrome Extension)</h3>
-                    <p>
-                        I created SimpleDefine because I wanted a faster way to look up word
-                        meanings without constantly opening new browser tabs. Built with 
-                        JavaScript and Chrome’s Extension API, I designed it with two ways 
-                        to get answers: a traditional popup search and a more intuitive 
-                        double-tap feature that shows definitions directly on the page. The 
-                        biggest challenge was making sure the content script could detect 
-                        these interactions across various website layouts without breaking 
-                        the page's original design. It was a great project for learning how 
-                        to handle event listeners and manage asynchronous API calls in a 
-                        real-time browser environment.
-                    </p>
-                    <div class="project-technology">
-                        <!-- <strong>Technologies:</strong> -->
-                        <ul class="project-li">
-                            <li>JavaScript</li>
-                            <li>DOM</li>
-                            <li>API</li>
-                            <li>HTML CSS</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="courses" class="courses-section">
-            <h2 data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">CERTIFICATIONS</h2>
-            <ol class="courses-list">
-                <li
-                    class="course-item"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                    data-aos-duration="310"
-                >
-                    <span>Solving LeetCode's Top Interview Questions in java - <span class="hours">( 15h )</span></span>
-                    <span>UDEMY</span>
-                </li>
-                <li
-                    class="course-item"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                    data-aos-duration="310"
-                >
-                    <span>Java Spring Boot Mastery: Guide to Modern Java Development - <span class="hours">( 16h )</span></span>
-                    <span>UDEMY</span>
-                </li>
-                <li
-                    class="course-item"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                    data-aos-duration="310"
-                >
-                    <span>Java DSA Course - Master the Fundamentals and Beyond - <span class="hours">( 9.9h )</span></span>
-                    <span>SCALER</span>
-                </li>
-                <li
-                    class="course-item"
-                    data-aos="fade-up"
-                    data-aos-delay="400"
-                    data-aos-duration="310"
-                >
-                    <span>Docker for Beginners: a Hands-On Practice Course - <span class="hours">( 12.5h )</span></span>
-                    <span>UDEMY</span>
-                </li>
-                <li
-                    class="course-item"
-                    data-aos="fade-up"
-                    data-aos-delay="600"
-                    data-aos-duration="310"
-                >
-                    <span>Java Course - Mastering the Fundamentals - <span class="hours">( 8h )</span></span>
-                    <span>SCALER</span>
-                </li>
-                <li
-                    class="course-item"
-                    data-aos="fade-up"
-                    data-aos-delay="700"
-                    data-aos-duration="310"
-                >
-                    <span>Operating System Course: Learn fundamentals of Operating System - <span class="hours">( 30.4h )</span></span>
-                    <span>SCALER</span>
-                </li>
-                <li
-                    class="course-item"
-                    data-aos="fade-up"
-                    data-aos-delay="800"
-                    data-aos-duration="310"
-                >
-                    <span>Computer Networking Course: Master Computer Networking - <span class="hours">( 28.3h )</span></span>
-                    <span>SCALER</span>
-                </li>
-                <li
-                    class="course-item"
-                    data-aos="fade-up"
-                    data-aos-delay="900"
-                    data-aos-duration="310"
-                >
-                    <span>JavaScript Course With Certification: Unlocking the Power of JavaScript - <span class="hours">( 10h )</span></span>
-                    <span>SCALER</span>
-                </li>
-                <li
-                    class="course-item"
-                    data-aos="fade-up"
-                    data-aos-delay="1000"
-                    data-aos-duration="310"
-                >
-                    <span>SQL: From Zero to Hero - Unleash the Data Superpowers - <span class="hours">( 4.5h )</span></span>
-                    <span>PREPINSTA</span>
-                </li>
-                <li
-                    class="course-item"
-                    data-aos="fade-up"
-                    data-aos-delay="1100"
-                    data-aos-duration="310"
-                >
-                    <span>DataBase Management System - <span class="hours">( 15h )</span></span>
-                    <span>PREPINSTA</span>
-                </li>
-                <li
-                    class="course-item"
-                    data-aos="fade-up"
-                    data-aos-delay="1200"
-                    data-aos-duration="310"
-                >
-                    <span>Build Responsive Real-Time Website with HTML and CSS - <span class="hours">( 37.5h )</span></span>
-                    <span>UDEMY</span>
-                </li>
-                <li
-                    class="course-item"
-                    data-aos="fade-up"
-                    data-aos-delay="1300"
-                    data-aos-duration="310"
-                >
-                    <span>Git & GITHUB - The Practical Guide - <span class="hours">( 10.5h )</span></span>
-                    <span>UDEMY</span>
-                </li>
-                <li
-                    class="course-item"
-                    data-aos="fade-up"
-                    data-aos-delay="1400"
-                    data-aos-duration="310"
-                >
-                    <span>CPP Nano Degree Course - <span class="hours">( 25h )</span></span>
-                    <span>PREPINSTA</span>
-                </li>
-                <li
-                    class="course-item"
-                    data-aos="fade-up"
-                    data-aos-delay="1500"
-                    data-aos-duration="310"
-                >
-                    <span>C Nano Degree Course - <span class="hours">( 18h )</span></span>
-                    <span>PREPINSTA</span>
-                </li>
-                <li
-                    class="course-item"
-                    data-aos="fade-up"
-                    data-aos-delay="1600"
-                    data-aos-duration="310"
-                >
-                    <span>Python Nano Degree Course - <span class="hours">( 28h )</span></span>
-                    <span>PREPINSTA</span>
-                </li>
-            </ol>
-        </div>
-
-        <div id="contact-me" class="contact-me">
-            <h2 data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">CONTACT ME</h2>
-            <div class="contact-me-logo" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="600">
-                <a href="mailto:ramalingamn4977@gmail.com" target="_blank" aria-label="Email">
-                    <i class="fas fa-envelope"></i>
+        <div class="proj-grid">
+          <article class="card proj reveal">
+            <div class="proj__top">
+              <span class="proj__tag">Full Stack · Java</span>
+              <div class="proj__links">
+                <a href="http://blog-zone-sif5.onrender.com/" target="_blank" rel="noopener" aria-label="Blog-Zone live demo">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3h7v7M21 3l-9 9M10 5H5a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-5"/></svg>
                 </a>
-                <a href="https://github.com/Ramalingam-N" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
+                <a href="https://github.com/Ramalingam-N/Blog-Zone" target="_blank" rel="noopener" aria-label="Blog-Zone code">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.36 9.36 0 015 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.02 10.02 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
                 </a>
-                <a href="https://linkedin.com/in/ramalingam-sns/" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin-in"></i>
+              </div>
+            </div>
+            <h3 class="proj__name">Blog-Zone</h3>
+            <p class="proj__desc">
+              A secure social blogging platform. Custom <strong>Spring Security filter chain</strong>
+              for auth, full CRUD, and instant like / comment / follow via AJAX — no page reloads.
+              User relationships &amp; search handled with JPA/Hibernate over MySQL.
+            </p>
+            <ul class="tag-row">
+              <li>Spring Boot</li><li>Spring Security</li><li>JPA/Hibernate</li>
+              <li>MySQL</li><li>Spring MVC</li><li>AJAX</li><li>Docker</li>
+            </ul>
+          </article>
+
+          <article class="card proj reveal">
+            <div class="proj__top">
+              <span class="proj__tag">Full Stack · Java</span>
+              <div class="proj__links">
+                  <a href="https://weatherspot.onrender.com/" target="_blank" rel="noopener" aria-label="WeatherSpot live demo">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3h7v7M21 3l-9 9M10 5H5a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-5"/></svg>
+                  </a>
+                <a href="https://github.com/Ramalingam-N/WeatherSpot" target="_blank" rel="noopener" aria-label="WeatherSpot code">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.36 9.36 0 015 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.02 10.02 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
                 </a>
+              </div>
             </div>
-            <div class="details" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
-                <div>
-                    <strong>Leetcode&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</strong>
-                    <span>
-                        <a class="leetcode" target="_blank" href="https://leetcode.com/Ramalingam_N/">Profile Link</a>
-                    </span>
-                </div>
-            </div>
+            <h3 class="proj__name">WeatherSpot</h3>
+            <p class="proj__desc">
+              A weather app integrating the Visual Crossing API for real-time conditions,
+              15-day forecasts and <strong>historical data back to 1973</strong>. Processes
+              large JSON responses into a clean server-side UI tracking UV, cloud cover &amp; wind.
+            </p>
+            <ul class="tag-row">
+              <li>Spring Boot</li><li>Java</li><li>REST API</li><li>Docker</li>
+              <li>Thymleaf</li>
+            </ul>
+          </article>
         </div>
 
-        <br /><br /><br /><br />
-        <script>
-            AOS.init({
-                once: true,
-                offset: 100,
-                duration: 800
-            });
+        <p class="proj-sub reveal">Tools & Extensions</p>
+        <div class="proj-grid proj-grid--sm">
+          <article class="card proj proj--sm reveal">
+            <div class="proj__top">
+              <h3 class="proj__name proj__name--sm">PushNPull</h3>
+              <div class="proj__links">
+                  <a href="https://pushnpull.onrender.com/" target="_blank" rel="noopener" aria-label="Blog-Zone live demo">
+                      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3h7v7M21 3l-9 9M10 5H5a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-5"/></svg>
+                  </a>
+                <a href="https://github.com/Ramalingam-N/PushNPull" target="_blank" rel="noopener" aria-label="PushNPull code">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.36 9.36 0 015 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.02 10.02 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+                </a>
+              </div>
+            </div>
+            <p class="proj__desc">Lightweight custom API testing tool handling GET/POST/PUT/DELETE, Basic Auth & Bearer tokens, with real-time latency monitoring.</p>
+            <ul class="tag-row"><li>Node.js</li><li>Express.js</li><li>REST APIs</li></ul>
+          </article>
 
-            document.querySelector(".project-card-1").addEventListener('click', function() {
-                window.open('https://github.com/Ramalingam-N/Blog-Zone.git', '_blank');
-            });
-            document.querySelector(".project-card-2").addEventListener('click', function() {
-                window.open('https://github.com/Ramalingam-N/PushNPull.git', '_blank');
-            });
-            document.querySelector(".project-card-3").addEventListener('click', function() {
-                window.open('https://github.com/Ramalingam-N/WeatherSpot.git', '_blank');
-            });
-            document.querySelector(".project-card-4").addEventListener('click', function() {
-                window.open('https://github.com/Ramalingam-N/Infinite-Screenshot.git', '_blank');
-            });
-            document.querySelector(".project-card-5").addEventListener('click', function() {
-                window.open('https://github.com/Ramalingam-N/SimpleDefine.git', '_blank');
-            });
+          <article class="card proj proj--sm reveal">
+            <div class="proj__top">
+              <h3 class="proj__name proj__name--sm">SimpleDefine</h3>
+              <a href="https://github.com/Ramalingam-N/SimpleDefine" target="_blank" rel="noopener" aria-label="SimpleDefine code">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.36 9.36 0 015 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.02 10.02 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+              </a>
+            </div>
+            <p class="proj__desc">Chrome extension for instant word definitions via popup or an inline double-tap on any page layout.</p>
+            <ul class="tag-row"><li>JavaScript</li><li>Chrome API</li><li>DOM</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    
-                    if (targetElement) {
-                        navRight.classList.remove('active');
-                        
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
+    <!-- ============================================================
+         SKILLS
+    ============================================================ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Tech Stack</p>
+          <h2 class="section__title">Tools I build with.</h2>
+        </header>
 
-            const toggle = document.querySelector('.navbar-toggle');
-            const navRight = document.querySelector('.nav-right');
-            toggle.addEventListener('click', () => {
-                navRight.classList.toggle('active');
-            });
-        </script>
-    </body>
+        <div class="skill-grid">
+          <div class="card skill reveal">
+            <h3 class="skill__cat">Languages</h3>
+            <ul class="tag-row">
+              <li>Java</li><li>C#</li><li>SQL</li><li>JavaScript</li><li>Bash</li><li>x64 Assembly</li>
+            </ul>
+          </div>
+          <div class="card skill reveal">
+            <h3 class="skill__cat">Java Ecosystem</h3>
+            <ul class="tag-row">
+              <li>Spring Boot 3</li><li>Spring Security</li><li>JPA/Hibernate</li><li>REST APIs</li><li>Microservices</li>
+            </ul>
+          </div>
+          <div class="card skill reveal">
+            <h3 class="skill__cat">Cloud &amp; DevOps</h3>
+            <ul class="tag-row">
+              <li>Azure Functions</li><li>Service Bus</li><li>API Management</li><li>Blob Storage</li><li>App Insights</li><li>Docker</li><li>Azure CI/CD</li>
+            </ul>
+          </div>
+          <div class="card skill reveal">
+            <h3 class="skill__cat">Databases</h3>
+            <ul class="tag-row">
+              <li>MySQL</li><li>SQL Optimization</li><li>Azure Table Storage</li>
+            </ul>
+          </div>
+          <div class="card skill reveal">
+            <h3 class="skill__cat">CS Foundations</h3>
+            <ul class="tag-row">
+              <li>DSA</li><li>System Design (HLD/LLD)</li><li>OS</li><li>Computer Networks</li><li>DBMS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ACHIEVEMENTS
+    ============================================================ -->
+    <section class="section section--alt" id="achievements">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Achievements</p>
+          <h2 class="section__title">Signals of depth.</h2>
+        </header>
+
+        <div class="ach-grid">
+          <div class="card ach reveal">
+            <div class="ach__icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17l6-6-6-6M12 19h8"/></svg>
+            </div>
+            <h3>Active DSA Practice</h3>
+            <p>Consistent problem-solving with over 720+ LeetCode solutions to keep algorithmic fundamentals sharp.</p>
+          </div>
+          <div class="card ach reveal">
+            <div class="ach__icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h5"/></svg>
+            </div>
+            <h3>Linux OS Deep Dive</h3>
+            <p>Practical navigation and configuration in open-source environments like Kali and Linux Mint.</p>
+          </div>
+          <div class="card ach reveal">
+            <div class="ach__icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3L2 8l10 5 10-5-10-5zM6 10v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg>
+            </div>
+            <h3>Bootcamp Teaching</h3>
+            <p>Selected as 1 of 6 senior students to mentor peers through a Java and Data Structures coding bootcamp.</p>
+          </div>
+          <div class="card ach reveal">
+            <div class="ach__icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M9 13.5V22l3-2 3 2v-8.5"/></svg>
+            </div>
+            <h3>CodingBat 5-Star Gold</h3>
+            <p>Top-tier Java problem-solving rank across CodingBat's full problem set.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EDUCATION
+    ============================================================ -->
+    <section class="section" id="education">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">Education</p>
+          <h2 class="section__title">Foundation.</h2>
+        </header>
+
+        <div class="edu-grid">
+          <article class="card edu reveal">
+            <div class="edu__meta"><span class="edu__date">2020 — 2024</span></div>
+            <div>
+              <h3 class="edu__deg">B.E. Computer Science &amp; Technology</h3>
+              <p class="edu__school">SNS College of Engineering</p>
+              <p class="edu__note">CGPA <strong>8.8 / 10</strong></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+    ============================================================ -->
+    <section class="section section--alt contact" id="contact">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <p class="section__eyebrow">Contact</p>
+          <h2 class="section__title">Let's build something great.</h2>
+          <p class="section__lead">
+            I'm open to Backend Engineer / SDE roles. Drop a line — I'll get back to you.
+          </p>
+        </header>
+
+        <div class="contact__actions reveal">
+          <a href="mailto:ramalingamn4977@gmail.com" class="btn btn--primary btn--lg">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            ramalingamn4977@gmail.com
+          </a>
+        </div>
+
+        <div class="contact__socials reveal" aria-label="Social links">
+          <a href="https://github.com/Ramalingam-N" target="_blank" rel="noopener" aria-label="GitHub" class="icon-link icon-link--box">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.36 9.36 0 015 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.02 10.02 0 0022 12.25C22 6.58 17.52 2 12 2z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/n-ramalingam" target="_blank" rel="noopener" aria-label="LinkedIn" class="icon-link icon-link--box">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.4c0-1.29-.02-2.94-1.8-2.94-1.8 0-2.07 1.4-2.07 2.85V21H9z"/></svg>
+          </a>
+          <a href="https://leetcode.com/Ramalingam_N/" target="_blank" rel="noopener" aria-label="LeetCode" class="icon-link icon-link--box">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M13.5 4.5L7 11l6.5 6.5M9 11h11"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Ramalingam N</span>
+      <span class="footer__note">Built with clean code &amp; care.</span>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
 </html>
